@@ -2,7 +2,6 @@ package src.main.java.bkp.soliddesignpattern.animalplanet;
 
 import src.main.java.bkp.soliddesignpattern.animalplanet.power.animal.AbstractBird;
 import src.main.java.bkp.soliddesignpattern.animalplanet.power.animal.birds.Pegion;
-import src.main.java.bkp.soliddesignpattern.animalplanet.power.animal.powers.FlyableBirdPower;
 
 public class DemoAnimalPlanetGame {
 
