@@ -11,13 +11,12 @@ public class WeatherObservable extends Observable {
   // So in case multiple observers are there, this slows down the system
   // Also if one of the observer throws exception the whole system will crash,
   // and other obs will not be notified
-  public synchronized void setWeatherData(double temperature, double humidity, double pressure) {
-    WeatherData currWeatherData = new WeatherData(temperature, humidity, pressure);
-    System.out.println("Source data: " + temperature + " " + humidity + " " + pressure);
+  public synchronized void setWeatherData(WeatherData currWeatherData) {
+    System.out.println("Source data: " + currWeatherData);
     measurementsChanged(currWeatherData);
   }
 
-  public synchronized void measurementsChanged(WeatherData weatherData) {
+  public void measurementsChanged(WeatherData weatherData) {
     setChanged();
     notifyObservers(weatherData);
   }

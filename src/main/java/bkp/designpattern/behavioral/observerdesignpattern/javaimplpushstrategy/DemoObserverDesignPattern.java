@@ -20,7 +20,7 @@ public class DemoObserverDesignPattern {
     // Issue: Observers can read stale data
     executorService.execute(() -> setWeatherData(weatherObservable, 10));
     executorService.execute(() -> setWeatherData(weatherObservable, 20));
-    weatherObservable.deleteObserver(avgConditionsDisplayObs);
+//    weatherObservable.deleteObserver(avgConditionsDisplayObs);
     executorService.execute(() -> setWeatherData(weatherObservable, 30));
     executorService.execute(() -> setWeatherData(weatherObservable, 40));
     executorService.execute(() -> setWeatherData(weatherObservable, 50));
@@ -35,6 +35,6 @@ public class DemoObserverDesignPattern {
   }
 
   private static void setWeatherData(WeatherObservable weatherObservable, int measurement) {
-    weatherObservable.setWeatherData(measurement, measurement, measurement);
+    weatherObservable.setWeatherData(new WeatherData(measurement, measurement, measurement));
   }
 }

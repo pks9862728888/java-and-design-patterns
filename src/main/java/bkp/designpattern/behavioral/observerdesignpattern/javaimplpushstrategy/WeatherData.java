@@ -22,4 +22,13 @@ public class WeatherData {
   public double getPressure() {
     return pressure;
   }
+
+  @Override
+  public String toString() {
+    return "WeatherData{" +
+        "temperature=" + temperature +
+        ", humidity=" + humidity +
+        ", pressure=" + pressure +
+        '}';
+  }
 }
