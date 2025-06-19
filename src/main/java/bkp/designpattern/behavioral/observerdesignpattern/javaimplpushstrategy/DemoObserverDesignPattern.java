@@ -13,11 +13,14 @@ public class DemoObserverDesignPattern {
     ExecutorService executorService = Executors.newFixedThreadPool(5);
     WeatherObservable weatherObservable = new WeatherObservable();
     weatherObservable.addObserver(new CurrentConditionDisplayObserver());
-    weatherObservable.addObserver(new AverageWeatherConditionDisplayObserver());
+    AverageWeatherConditionDisplayObserver avgConditionsDisplayObs =
+        new AverageWeatherConditionDisplayObserver();
+    weatherObservable.addObserver(avgConditionsDisplayObs);
 
     // Issue: Observers can read stale data
     executorService.execute(() -> setWeatherData(weatherObservable, 10));
     executorService.execute(() -> setWeatherData(weatherObservable, 20));
+    weatherObservable.deleteObserver(avgConditionsDisplayObs);
     executorService.execute(() -> setWeatherData(weatherObservable, 30));
     executorService.execute(() -> setWeatherData(weatherObservable, 40));
     executorService.execute(() -> setWeatherData(weatherObservable, 50));
