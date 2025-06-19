@@ -1,5 +1,6 @@
 package src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpushstrategy;
 
+import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.WeatherData;
 import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpushstrategy.observable.WeatherObservable;
 import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpushstrategy.observers.AverageWeatherConditionDisplayObserver;
 import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpushstrategy.observers.CurrentConditionDisplayObserver;

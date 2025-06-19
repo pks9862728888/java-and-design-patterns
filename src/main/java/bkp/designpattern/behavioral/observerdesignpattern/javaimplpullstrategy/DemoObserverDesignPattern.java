@@ -1,5 +1,6 @@
 package src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy;
 
+import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.WeatherData;
 import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observable.WeatherObservable;
 import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observers.AverageWeatherConditionDisplayObserver;
 import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observers.CurrentConditionDisplayObserver;
@@ -32,6 +33,6 @@ public class DemoObserverDesignPattern {
   }
 
   private static void setWeatherData(WeatherObservable weatherObservable, int measurement) {
-    weatherObservable.setWeatherData(measurement, measurement, measurement);
+    weatherObservable.setWeatherData(new WeatherData(measurement, measurement, measurement));
   }
 }

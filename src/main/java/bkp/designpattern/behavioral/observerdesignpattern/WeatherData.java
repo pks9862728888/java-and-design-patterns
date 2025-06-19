@@ -1,4 +1,4 @@
-package src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpushstrategy;
+package src.main.java.bkp.designpattern.behavioral.observerdesignpattern;
 
 public class WeatherData {
   private double temperature;
