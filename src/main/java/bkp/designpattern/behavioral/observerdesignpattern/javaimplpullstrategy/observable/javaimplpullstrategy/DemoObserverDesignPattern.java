@@ -1,8 +1,8 @@
-package src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy;
+package src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observable.javaimplpullstrategy;
 
-import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observable.WeatherObservable;
-import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observers.AverageWeatherConditionDisplayObserver;
-import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observers.CurrentConditionDisplayObserver;
+import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observable.javaimplpullstrategy.observable.WeatherObservable;
+import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observable.javaimplpullstrategy.observers.AverageWeatherConditionDisplayObserver;
+import src.main.java.bkp.designpattern.behavioral.observerdesignpattern.javaimplpullstrategy.observable.javaimplpullstrategy.observers.CurrentConditionDisplayObserver;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
