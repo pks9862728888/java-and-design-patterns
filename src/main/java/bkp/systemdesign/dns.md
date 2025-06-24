@@ -41,4 +41,4 @@ Iterative query: Local DNS resolver asks the name server for next server till ip
 It’s worth adding that DNS sacrifices strong consistency to achieve high performance and scalability because it processes many read operations compared to write operations. Updates propagate lazily, which helps responses stay fast without overloading the system.
 
 # How is caching performed at different levels of the Internet to reduce the querying burden over the DNS infrastructure?
-2 min
+2 min ttl
