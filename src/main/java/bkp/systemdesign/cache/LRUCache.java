@@ -3,7 +3,7 @@ package src.main.java.bkp.systemdesign.cache;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class LruCache {
+public class LRUCache {
   public static final int LRU_CACHE_SIZE = 2;
 
   public static void main(String[] args) {
